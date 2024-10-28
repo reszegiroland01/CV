@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstCV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Molengo&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Molengo&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+<body class="font-['Open_Sans']">
+    <div class="bg-white shadow-md px-[40px]  py-[20px] h-fit w-[579px] min-h-[792px]">
+        <div class="flex gap-10 mb-[25px]">
+            <img src="asset/IMG_4878.jpeg" alt="" class="h-[70px] w-[70px] rounded-md ">
+            <div class="flex flex-col">
+                <p class="font-bold text-[30px] text-[#262B33] font-['Molengo']">
+                    <!-- `${firstName && lastName ? ${firstName} ${lastName} : "Sample Name"}` -->
+                     John Pork
+                </p>
+                <p class="text-[#ABADB0] text-[12px]">
+                    <!-- `{jobTitle}` -->
+                    Frontend fejlesztő, webfejlesztő
+                </p>
+            </div>
+        </div>
+
+        <div class="flex ">
+            <div class="w-[70%] flex flex-col gap-4">
+                <div>
+                    <div class="flex gap-1 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#262B33" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                          </svg>
+                          <p class="font-semibold text-[#262B33] text-[18px] font-['Molengo']">Profil</p>
+                    </div>
+                    
+                    <p class="text-[#262B33] text-[12px] leading-[18px] ml-5">
+                        <!-- `${introduce}` -->
+                        Proaktív személyiség, nyitottság új technológiák elsajátítására. 
+                        Jelenleg munkamellett is, folyamatosan képzem magam, és szívesen küzdök meg különböző problémákkal.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex gap-1 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#262B33" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                        </svg>
+                          <p class="font-semibold text-[#262B33] text-[18px] font-['Molengo']">Szakmai Tapasztalat</p>
+                    </div>
+                    
+                    <div>
+                        <!-- `${previousJobs?.map((item : PreviousJob,index:number)=>)}` -->
+                         <div class="flex flex-col gap-1">
+                            <p class="text-[#262B33] text-[12px] font-bold ml-5">
+                                <!-- `${item.jobTitle}` -->
+                                Design Technologist / React fejlesztő a GE Healthcare, Budapest
+                            </p>
+                            <p class='flex gap-2 text-[#ABADB0] text-[10px] ml-5'>
+                                <span>
+                                    <!-- `${formatDate(item.beginDate.toLocaleDateString())}` -->
+                                     November 2023
+                                </span>
+                                -
+                                <span>
+                                    <!-- {formatDate(item.endDate.toLocaleDateString())} -->
+                                </span>
+                            </p>
+                            <p class='text-[12px] ml-5'>
+                                <!-- {item.description} -->
+                                Design tervek alapján , webappok megtervezése, létrehozása csapatban. Prototipusok készítése Reactban, Javascript,ContextApi,Tailwindcss nyelven UI/UX csapattal szorosan együttműködve. 
+                            </p>
+                            
+                         </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex gap-1 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#262B33" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                        </svg>
+                          <p class="font-semibold text-[#262B33] text-[18px] font-['Molengo']">Végzettség</p>
+                    </div>
+                    
+                    <div>
+                        <!-- {schools?.map((item : School,index:number)=>
+
+                            )} -->
+                        <div>
+                            <p class="text-[#262B33] text-[12px] font-bold ml-5">
+                                <!-- {item.degree},{item.schoolName} -->
+                                Szoftverfejlesztő-és tesztelő,
+                                Debreceni SZC Beregszászi Pál Technikum és Kollégium
+                            </p>
+                            <p class='flex gap-2 text-[#ABADB0] text-[10px] ml-5'>
+                                <span>
+                                    <!-- `${formatDate(item.beginDate.toLocaleDateString())}` -->
+                                     November 2023
+                                </span>
+                                -
+                                <span>
+                                    <!-- {formatDate(item.endDate.toLocaleDateString())} -->
+                                </span>
+                            </p>
+                            <p class='text-[12px] ml-5'>
+                                <!-- {item.description} -->
+                                Design tervek alapján , webappok megtervezése, létrehozása csapatban. Prototipusok készítése Reactban, Javascript,ContextApi,Tailwindcss nyelven UI/UX csapattal szorosan együttműködve. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="w-[30%] flex flex-col gap-4 px-4"> 
+                <div>
+                    <p class="font-semibold text-[#262B33] text-[12px] font-['Molengo']">Adatok</p>
+                    <div class="text-[12px]">
+                        <p>Hajdúnánás</p>
+                        <p>Magyarország</p>
+                        <p>06307225957</p>
+                        <p class="text-[#2196F3]">pentek.mate01@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <p class="font-semibold text-[#262B33] text-[12px] font-['Molengo']">Készségek</p>
+                    <div class="text-[12px]">
+
+                    </div>
+                </div>
+                
+                <div>
+                    <p class="font-semibold text-[#262B33] text-[12px] font-['Molengo']">Linkek</p>
+                    <div class="text-[12px] text-[#2196F3]">
+                        <p>Portfólió</p>
+                        <p>GitHub</p>
+                        <p>Linkedin</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold text-[#262B33] text-[12px] font-['Molengo']">Nyelvek</p>
+                    <div class="text-[12px]">
+                        <p>Angol</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
