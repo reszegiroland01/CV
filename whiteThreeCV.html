@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstCV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Molengo&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Molengo&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> 
+
+</head>
+<body class="font-['Open_Sans']">
+    <div class="bg-white shadow-md h-fit w-[579px] min-h-[792px]">
+        <div class="flex w-full h-full ">
+            <div class="w-[30%]  px-10 py-10">
+                <img src="asset/IMG_4878.jpeg" alt="" class="h-[80px] w-[80px] rounded-full ">
+            </div>
+            <div class="flex flex-col w-[70%]  py-10">
+                
+                 <div class="text-[12px] text-gray-500 mb-5">
+                    <div class="flex gap-1" >
+                        <p>Hajdúnánás,</p>
+                        <p>Magyarország</p>
+                    </div>
+                    <div class="flex gap-1">
+                        <p>06307225957</p>
+                        <p>pentek.mate01@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="flex  gap-2 mb-2">
+                    <p class="font-semibold text-[19px] ">
+                        <!-- `${firstName && lastName ? ${firstName} ${lastName} : "Sample Name"}` -->
+                         John Pork,
+                    </p>
+                    <p class=" font-semibold text-[19px]">
+                        <!-- `{jobTitle}` -->
+                        Frontend fejlesztő, webfejlesztő
+                    </p>
+                </div>
+
+                <div>
+                    <!-- Profil -->
+                    <p class=" text-[16px] font-semibold leading-[18px] ">
+                        <!-- `${introduce}` -->
+                        Proaktív személyiség, nyitottság új technológiák elsajátítására. 
+                        Jelenleg munkamellett is, folyamatosan képzem magam, és szívesen küzdök meg különböző problémákkal.
+                    </p>
+                </div>
+
+            </div>
+                
+        </div>
+
+        <div class="flex w-full h-full mb-8">
+            <div class="w-[30%]  px-10 ">
+                <p class="text-[12px] text-gray-500">Képességek</p>
+            </div>
+
+            <div class="grid grid-cols-2 w-[70%] gap-4 text-[12px]">
+                <div class="flex items-center gap-4 p-2">
+                    <div class="border-4 border-black rounded-full h-[20px] w-[20px]"></div>
+                    <p>React</p>
+                </div>
+                <div class="flex items-center gap-4 p-2">
+                    <div class="border-4 border-black rounded-full  h-[20px] w-[20px]"></div>
+                    <p>JavaScript</p>
+                </div>
+                <div class="flex items-center gap-4 p-2">
+                    <div class="border-4 border-black rounded-full h-[20px] w-[20px]"></div>
+                    <p>MySQL</p>
+                </div>
+                <div class="flex items-center gap-4 p-2">
+                    <div class="border-4 border-black rounded-full h-[20px] w-[20px]"></div>
+                    <p>NodeJs</p>
+                </div>
+                <div class="flex items-center gap-4 p-2">
+                    <div class="border-4 border-black rounded-full h-[20px] w-[20px]"></div>
+                    <p>Firebase</p>
+                </div>
+                <div class="flex items-center gap-4 p-2">
+                    <div class="border-4 border-black rounded-full  h-[20px] w-[20px]"></div>
+                    <p>Figma</p>
+                </div>
+                <div class="flex items-center gap-4 p-2">
+                    <div class="border-4 border-black rounded-full h-[20px] w-[20px]"></div>
+                    <p>Bootstarp5</p>
+                </div>
+                <div class="flex items-center gap-4 p-2">
+                    <div class="border-4 border-black rounded-full h-[20px] w-[20px]"></div>
+                    <p>Tailwind CSS</p>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="flex w-full h-full mb-8">
+            <div class="w-[30%]  px-10">
+                <p class="text-[12px] text-gray-500 ">Szakmai tapasztalat</p>
+            </div>
+
+            <!-- `${previousJobs?.map((item : PreviousJob,index:number)=>)}` -->
+            <div class="flex flex-col  w-[70%] gap-2 text-[12px] ">
+                <p class=" text-[16px] font-semibold  w-full mr-5">
+                    <!-- `${item.jobTitle}` -->
+                    Design Technologist / React fejlesztő a GE Healthcare, Budapest
+                </p>
+                <p class='flex  gap-2 text-gray-500 text-[12px]'>
+                    <span>
+                        <!-- `${formatDate(item.beginDate.toLocaleDateString())}` -->
+                         November 2023
+                    </span>
+                    -
+                    <span>
+                        <!-- {formatDate(item.endDate.toLocaleDateString())} -->
+                    </span>
+                </p>
+                <p class='text-[12px] mr-5 '>
+                    <!-- {item.description} -->
+                    Design tervek alapján , webappok megtervezése, létrehozása csapatban. Prototipusok készítése Reactban, Javascript,ContextApi,Tailwindcss nyelven UI/UX csapattal szorosan együttműködve. 
+                </p> 
+            </div>         
+        </div>
+
+        <div class="flex w-full h-full mb-8 ">
+            <div class="w-[30%]  px-10 ">
+                <p class="text-[12px] text-gray-500 ">Végzettség</p>
+            </div>
+
+            <!-- {schools?.map((item : School,index:number)=> )} -->
+            <div class="flex flex-col  w-[70%] gap-2 text-[12px] ">
+                <p class=" text-[16px] font-semibold  w-full mr-5">
+                    <!-- {item.degree},{item.schoolName} -->
+                    Szoftverfejlesztő-és tesztelő,
+                    Debreceni SZC Beregszászi Pál Technikum és Kollégium
+                </p>
+                <p class='flex  gap-2 text-gray-500 text-[12px]'>
+                    <span>
+                        <!-- `${formatDate(item.beginDate.toLocaleDateString())}` -->
+                        November 2023
+                    </span>
+                    -
+                    <span>
+                        <!-- {formatDate(item.endDate.toLocaleDateString())} -->
+                    </span>
+                </p>
+                <p class='text-[12px] mr-5 '>
+                   <!-- {item.description} -->
+                   Design tervek alapján , webappok megtervezése, létrehozása csapatban. Prototipusok készítése Reactban, Javascript,ContextApi,Tailwindcss nyelven UI/UX csapattal szorosan együttműködve. 
+                </p>
+            </div>
+        </div>
+
+
+        <div class="flex w-full h-full mb-8">
+            <div class="w-[30%]  px-10">
+                <p class="text-[12px] text-gray-500 ">Linkek</p>
+            </div>
+
+            <div class="flex flex-col font-semibold underline w-[70%] gap-2 text-[12px] ">
+                <p>Portfólió</p>
+                <p>GitHub</p>
+                <p>Linkedin</p>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
